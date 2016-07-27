@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box; 
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  color: #5f5f5f;
+  font-weight: 500;
+  font-size: 36px;
+  color: black;
+}
+
+h1 {
+  font-family: 'Signika', sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+  /*color: #07bed4;*/
+  color: black;
+}
+
+
+p {
+  line-height: 120%;
+  font-size: 18px;
+  color: white;
+/*  margin: 2% 0%; */
+}
+
+section {
+  margin: 0% 20%;
+  margin-top: 8%;
+}
+
+p span {
+  font-family:'Signika', sans-serif;
+  /*font-family: 'Work Sans', sans-serif;*/
+  font-size: 16px;
+  font-weight: 600;
+  color: #5f5f5f; /*#047b84*/
+}
+p.caption-text {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+a:link { /* unvisited link */
+/*  color: #07bed4;*/
+}
+a {
+  text-decoration: none;
+  color: #047b84;
+  font-weight: 300;
+}
+
+a:hover {
+  color: #07bed4;
+}
+
+.main-container section h4 {
+  margin-top: 10%;
+}
+
+.title-page {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/hero-img.jpeg);
+  background-size: cover;
+  color: #ffffff;
+  text-align: center; 
+}
+.title-page h1 {
+  text-transform: uppercase; 
+  position: relative;
+  top: 30%;
+  padding: 0 10%;
+  color: #fff;
+}
+
+div.title-frame p {
+  text-align: left;
+  margin: 0% 20%;
+  /*background-color: rgba(0,0,0, 0.2);*/
+}
+.title-frame p.subs-pg {
+  margin-top: 10px;
+}
+.title-frame p.ad-pg {
+  margin-top: 30px;
+}
+
+/************* NAV *************/
+/*nav based on https://teamtreehouse.com/community/forum-tip-create-a-sticky-navigation-with-css-and-jquery-2*/
+/*
+conversion notes for below:
+header is now .title-page
+main container starts after title-page
+get rid of header
+move nav below title page but above main container 
+changed javascript to get viewport height
+*/
+
+.title-page, .main-nav-scrolled {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+.main-nav ul {
+  float: right;
+}
+.main-nav ul li {
+  float: none;
+  display: inline-block;
+  padding-top: 22px;
+  padding-right: 10px;
+}
+.main-nav ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  font-family: 'Signika', sans-serif;
+  font-size: 20px;
+  color: #fff;
+}
+
+.main-nav a.nav-active {
+  color: #047b84;
+}
+
+
+
+/************* TITLE *************/
+
+.title-page h2 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 200;
+  font-size: 38px;
+  margin-top: 50vh; 
+  padding: 0 10%;
+  text-transform: none;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+
+
+
+
+
